@@ -41,6 +41,7 @@ INSTALLED_APPS = [
 
     # local apps
 
+    'jokes.apps.JokesConfig',
     'pages.apps.PagesConfig',
 ]
 
