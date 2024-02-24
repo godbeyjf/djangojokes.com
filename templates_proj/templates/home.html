@@ -1,0 +1,12 @@
+{% extends "_base.html" %}
+{% load common_tags %}
+
+{% block title %}Home{% endblock %}
+{% block main %}
+  <h2>Welcome!</h2>
+  <ul>
+    <li><a href="{% url 'filters' %}">Filters</a></li>
+    <li><a href="{% url 'tags' %}">Tags</a></li>
+  </ul>
+  {% random_joke %}
+{% endblock %}
